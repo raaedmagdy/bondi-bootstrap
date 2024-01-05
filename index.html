@@ -158,52 +158,62 @@
           <h2>We Make This</h2>
           <p class="text-black-50 text-uppercase">PREPARE TO BE AMAZED</p>
         </div>
-        <ul class="list-unstyled d-flex justify-content-center mt-5 mb-5">
-          <li class="active rounded-pill">All</li>
-          <li>Design</li>
-          <li>Code</li>
-          <li>Photo</li>
-          <li>App</li>
+        <ul
+          class="switcher list-unstyled d-flex justify-content-center mt-5 mb-5"
+        >
+          <li class="active rounded-pill" data-cat=".all">All</li>
+          <li data-cat=".des rounded-pill">Design</li>
+          <li data-cat=".code rounded-pill">Code</li>
+          <li data-cat=".photo rounded-pill">Photo</li>
+          <li data-cat=".app rounded-pill">App</li>
         </ul>
         <div class="row">
           <div class="col-sm-6 col-md-4 col-lg-3">
             <div class="box mb-3" data-work="Application">
-              <img class="img-fluid" src="./images/work-01.jpg" alt="" />
+              <img class="all des img-fluid" src="images/work-01.jpg" alt="" />
             </div>
           </div>
           <div class="col-sm-6 col-md-4 col-lg-3">
             <div class="box mb-3" data-work="Application">
-              <img class="img-fluid" src="./images/work-02.jpg" alt="" />
+              <img class="all code img-fluid" src="images/work-02.jpg" alt="" />
             </div>
           </div>
           <div class="col-sm-6 col-md-4 col-lg-3">
             <div class="box mb-3" data-work="Application">
-              <img class="img-fluid" src="./images/work-03.jpg" alt="" />
+              <img
+                class="all photo img-fluid"
+                src="images/work-03.jpg"
+                alt=""
+              />
             </div>
           </div>
           <div class="col-sm-6 col-md-4 col-lg-3">
             <div class="box mb-3" data-work="Application">
-              <img class="img-fluid" src="./images/work-04.jpg" alt="" />
+              <img class="all app img-fluid" src="images/work-04.jpg" alt="" />
             </div>
           </div>
           <div class="col-sm-6 col-md-4 col-lg-3">
             <div class="box mb-3" data-work="Application">
-              <img class="img-fluid" src="./images/work-05.jpg" alt="" />
+              <img class="all app img-fluid" src="images/work-05.jpg" alt="" />
             </div>
           </div>
           <div class="col-sm-6 col-md-4 col-lg-3">
             <div class="box mb-3" data-work="Application">
-              <img class="img-fluid" src="./images/work-06.jpg" alt="" />
+              <img
+                class="all photo img-fluid"
+                src="images/work-06.jpg"
+                alt=""
+              />
             </div>
           </div>
           <div class="col-sm-6 col-md-4 col-lg-3">
             <div class="box mb-3" data-work="Application">
-              <img class="img-fluid" src="./images/work-07.jpg" alt="" />
+              <img class="all code img-fluid" src="images/work-07.jpg" alt="" />
             </div>
           </div>
           <div class="col-sm-6 col-md-4 col-lg-3">
             <div class="box mb-3" data-work="Application">
-              <img class="img-fluid" src="./images/work-08.jpg" alt="" />
+              <img class="all des img-fluid" src="images/work-08.jpg" alt="" />
             </div>
           </div>
         </div>
@@ -410,7 +420,7 @@
     <!-- End blog -->
 
     <!-- sub -->
-    <div class="subscribe pt-5 pb-5 text-center text-md-start">
+    <div class="subscribe pt-5 pb-5 text-center text-md-start" id="contact">
       <div class="container">
         <form class="row align-items-center">
           <div class="col-md-6 col-lg-3">
@@ -489,21 +499,41 @@
                 >graphberry@gmail.com</a
               >
               <ul class="d-flex mt-5 list-unstyled gap-5">
-                <li><a class="d-block text-light" href="#">
-                  <i class="fa-brands fa-facebook fa-lg facebook rounded-circle p-2"></i>
-                </a></li>
-                <li><a class="d-block text-light" href="#">
-                  <i class="fa-brands fa-linkedin fa-lg linkedin rounded-circle p-2"></i>
-                </a></li>
-                <li><a class="d-block text-light" href="#">
-                  <i class="fa-brands fa-twitter fa-lg twitter rounded-circle p-2"></i>
-                </a></li>
-                <li><a class="d-block text-light" href="#">
-                  <i class="fa-brands fa-instagram fa-lg instagram rounded-circle p-2"></i>
-                </a></li>
-                <li><a class="d-block text-light" href="#">
-                  <i class="fa-brands fa-youtube fa-lg youtube rounded-circle p-2"></i>
-                </a></li>
+                <li>
+                  <a class="d-block text-light" href="#">
+                    <i
+                      class="fa-brands fa-facebook fa-lg facebook rounded-circle p-2"
+                    ></i>
+                  </a>
+                </li>
+                <li>
+                  <a class="d-block text-light" href="#">
+                    <i
+                      class="fa-brands fa-linkedin fa-lg linkedin rounded-circle p-2"
+                    ></i>
+                  </a>
+                </li>
+                <li>
+                  <a class="d-block text-light" href="#">
+                    <i
+                      class="fa-brands fa-twitter fa-lg twitter rounded-circle p-2"
+                    ></i>
+                  </a>
+                </li>
+                <li>
+                  <a class="d-block text-light" href="#">
+                    <i
+                      class="fa-brands fa-instagram fa-lg instagram rounded-circle p-2"
+                    ></i>
+                  </a>
+                </li>
+                <li>
+                  <a class="d-block text-light" href="#">
+                    <i
+                      class="fa-brands fa-youtube fa-lg youtube rounded-circle p-2"
+                    ></i>
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
@@ -512,6 +542,7 @@
     </div>
     <!-- End footer -->
 
+    <script src="js/index.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
